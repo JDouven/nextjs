@@ -20,11 +20,11 @@ const Home: NextPage<Props> = ({ quote, author }) => (
 );
 
 Home.getInitialProps = async ({ req }) => {
-  const res = await fetch("https://quote-garden.herokuapp.com/quotes/random");
-  const json = await res.json();
+  // const res = await fetch("https://quote-garden.herokuapp.com/quotes/random");
+  // const json = await res.json();
   return {
-    quote: json.quoteText,
-    author: json.quoteAuthor
+    quote: "The computer is never wrong, only the programmer is.",
+    author: "Quote Author"//json.quoteAuthor
   };
 };
 
